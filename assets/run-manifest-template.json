@@ -1,0 +1,20 @@
+{
+  "run_id": null,
+  "started_at": null,
+  "generated_at": null,
+  "client_timezone": null,
+  "research_status": "offline",
+  "resume_source": {
+    "filename_or_reference": null,
+    "extraction_status": null,
+    "unreadable_sections": []
+  },
+  "scope": {
+    "regions": [],
+    "career_level": null,
+    "entry_horizon": null,
+    "provisional_assumptions": []
+  },
+  "sources": [],
+  "recommendations": []
+}
