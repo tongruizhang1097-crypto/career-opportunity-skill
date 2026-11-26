@@ -1,0 +1,33 @@
+{
+  "objective": null,
+  "as_of_date": null,
+  "resume_source": {
+    "filename_or_reference": null,
+    "extraction_status": null,
+    "unreadable_sections": []
+  },
+  "planned_entry_horizon": null,
+  "target_regions": [],
+  "target_career_level": null,
+  "compensation_and_conditions": [],
+  "hard_constraints": [],
+  "preference_tradeoffs": [],
+  "learning_budget": {
+    "hours_per_week": null,
+    "months": null,
+    "financial_limit": null
+  },
+  "capabilities": [],
+  "capability_record_fields": [
+    "task",
+    "proficiency",
+    "evidence",
+    "self_reported_or_demonstrated",
+    "source_date",
+    "page_or_section"
+  ],
+  "interests_not_yet_demonstrated": [],
+  "available_resources": [],
+  "required_unknowns": [],
+  "explicit_assumptions": []
+}
