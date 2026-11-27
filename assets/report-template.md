@@ -1,60 +1,83 @@
-# Career opportunity investigation
+# [给这个人的一句话标题：这周做什么]
 
-## Snapshot and resume intake
+**适用对象**　[阶段、毕业时间、能去的城市、当前实习。不写联系方式。]  
+**快照**　[本地生成时间与时区] · `[live / partial / offline]`
 
-State generation time and timezone, live / partial / offline research status, actual market data periods, and key coverage limitations. Identify the supplied resume version/reference, extraction quality, and any unreadable sections without reproducing private contact details.
+用使用者的语言重写标题。下面的结构保持不变。每一条实质判断和每一个推荐岗位，都在同一块里写来源名称、可点击 URL、发布日期、截止日期和本次核验时间。不要把来源只放进 CSV。
 
-Show the target region, level, entry horizon, and which inputs are user preferences versus provisional resume-only assumptions. Explain that inspected-current sources can contain lagged statistics and that job-page status is advertised availability, not a guarantee of an unfilled funded position.
+排序先排除本轮没有一手打开、或没有显示在招的岗位，再按这个顺序比较，不打加权分：本轮一手在招、与已证明的工作是否契合、资格是否够得着、岗位成色、来源质量、新鲜程度和截止日期、仅当原文写明时才看留用或转化。
 
-## Decision and scope
+## 现在先做什么
 
-State the strongest supported conclusion, as-of date, region(s), target level, entry horizon, assumptions, and limitations. Separate near-term entry from longer-term research/learning investment.
+[两到四句，对着这个人说：这周投什么，先别投什么，为什么。]
 
-## Capability and resource evidence
+> 来源：[来源名称](https://example.invalid/jobs/example) · 发布 [日期或页面未写] · 截止 [日期或页面未写] · 本次核验 [ISO 时间]
 
-| Capability or resource | CV page/section and evidence status | Proficiency or uncertainty | Transferable tasks | Critical unknown |
+| 这周投 | 先别投 |
+| --- | --- |
+| [岗位与名次] | [已关闭、届别不符、城市不符、打杂、原文打不开，各写原因] |
+
+若可投岗位少于 10 个，在这里写明实际数量和原因，并与 `job_search.shortfall_reason` 一致。不要凑数。
+
+## 这份简历已经证明什么
+
+| 已证明的工作 | 简历位置与证据边界 | 还不能当成已证明的事 |
+| --- | --- | --- |
+| [任务] | [页码或段落；独立完成 / 协助 / 仅自述] | [边界] |
+
+**约束：** 城市 [ ] · 毕业或入场 [ ] · 当前实习 [ ] · 愿意做 [ ] · 不愿意做 [ ]。未知就写未知。
+
+## 可投岗位
+
+本轮一手核验为仍在招、且这个人够格的岗位。名次从 1 排到实际数量，不超过 10。
+
+### 1. [雇主] — [岗位标题]
+
+[一两句，只适用于这个人：哪段已证明的工作对得上，哪条约束满足了，哪一点还没被证明。]
+
+- 状态：本轮已打开，页面显示在招或接受申请
+- 资格：[eligible，或 conditional 与条件]
+- 来源：[来源名称](https://example.invalid/jobs/example) · 类型 `[official / ats / primary_board / campus]`
+- 发布：[日期或页面未写]
+- 截止：[日期或页面未写]
+- 本次核验：[ISO 时间]
+
+按同样格式继续写 2..n。转载、已关闭、未打开、届别不符的岗位不要出现在这一节。
+
+## 求职策略
+
+**作品。** [一份作品，对应仍在招岗位真正要的缺口。交付物、前提、大致工时。]
+
+**两条路怎么选。** [只有简历和在招岗位同时支持两条路时才写。什么证据会改顺序。]
+
+**什么事实会改写建议。**
+
+- [至多三条，绑在这个人的约束上]
+
+## 方向比较
+
+短表，服务上面的选择，不是报告正文。
+
+| 方向 | 和已证明工作的关系 | 门槛 | 决定 | 来源（名称、链接、发布日、数据覆盖期、本次核验） |
 | --- | --- | --- | --- | --- |
+| [方向] | [优势与缺口] | [通过 / 不通过 / 未知] | [优先验证 / 小规模探索 / 观察 / 暂缓] | [来源](https://example.invalid/report) |
 
-Keep interests, self-reports, and independent delivery distinct. Preserve user constraints and explain tradeoffs.
+## 看过但没有放进名单
 
-## Candidate comparison
+| 岗位 | 原因 | 来源与本次核验 |
+| --- | --- | --- |
+| [雇主与标题] | [已关闭 / 未打开 / 届别不符 / 只有转载 / 城市不符] | [来源](https://example.invalid/closed) · [时间] |
 
-| Candidate market and task | Demand and growth | Supply and value capture | Personal entry gap | Timing and transferable options | Gate status | Evidence confidence | Decision |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+## 验证
 
-Explain why the shortlist is preferable. Label qualitative comparisons, samples, and unknowns; do not invent a national ranking.
+| 方向 | 交付物 | 前提与工时 | 谁来看 | 做成或停的信号 |
+| --- | --- | --- | --- | --- |
+| [方向] | [具体任务] | [范围] | [从业者或面试官] | [信号] |
 
-## Shortlisted opportunity records
+## 证据范围
 
-For each candidate, record:
-- Buyer, problem, funded work, role family, region, and level.
-- Evidence connecting business growth to hiring.
-- Qualified supply, employer substitutes, and competing entrant paths.
-- Personal advantage, critical gaps, entry conditions, and proof needed.
-- Support, counterevidence, and material unknowns with sources.
-- Preparation/adoption/supply scenarios and decisive assumptions.
-- Observations that would falsify the hypothesis or change priority.
+检索了 [boards_searched]。一手打开并仍在招的相关岗位 [n] 个，目标 10 个。[短名单原因。]
 
-## Current inspected job examples
+岗位日期是页面上的发布日。统计的覆盖期单独写。本次核验时间是打开页面的时间。审计脚本只核对清单里声明的链接和时间，不代替打开页面。[未解决的警告。]
 
-| Candidate | Employer and requisition | Region and level | Critical requirements | Advertised status | Checked at | Source |
-| --- | --- | --- | --- | --- | --- | --- |
-
-Keep indexed-only, cached, blocked, and closed roles distinct from inspected current examples. Omit assertions of currently available jobs in an offline run. Use current examples as existence/requirements evidence, not a market-wide ranking.
-
-## Validation and learning plan
-
-| Candidate | Experiment and deliverable | Prerequisites and effort range | Feedback source | Success or stop signal | Next decision |
-| --- | --- | --- | --- | --- | --- |
-
-Tie learning to employer-valued tasks. Include a primary direction and adjacent option only when justified; preserve uncertainty if neither has sufficient support.
-
-## Evidence coverage and sources
-
-State inspected posting/employer counts, method, periods, duplicate handling, indexed/archived sources, and unavailable data. Distinguish official statistics, platform metrics, employer descriptions, practitioner evidence, and inference. Link the ledger if generated.
-
-Link the completed run manifest when generated. Explain unresolved freshness-audit warnings. Report whether fresh sources changed the shortlist on a refresh; never just replace the old generation date.
-
-## Revisit triggers
-
-Specify information that would change the decision, such as project results, hiring changes, paid adoption, compensation, entrant supply, or changed user constraints. Do not imply scheduled monitoring.
+把 HTML 文件在浏览器里打开，打印为 PDF。不需要本地服务器。

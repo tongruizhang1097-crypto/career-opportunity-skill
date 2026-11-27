@@ -1,4 +1,4 @@
 interface:
-  display_name: "简历驱动职业蓝海研究"
-  short_description: "上传简历，联网核验当下岗位与市场趋势，生成带来源和日期的职业机会报告"
-  default_prompt: "使用 $find-career-opportunities，根据我上传的简历，在本次运行中联网核验岗位与市场信息，生成职业机会报告、能力差距和验证计划；标明检索时间、来源及数据缺口。"
+  display_name: "简历驱动的求职辅导"
+  short_description: "按这份简历核验现在能投的岗位，给出带来源的策略和可保存的网页报告"
+  default_prompt: "使用 $find-career-opportunities。先读我上传的简历和约束，再在本次运行中打开雇主官网、公司招聘系统和主流招聘板，找出现在能投的岗位。按排序规则给出最多 10 个一手核验仍在招的岗位，每个岗位旁边写明来源名称、链接、发布日期、截止日期和本次核验时间。主交付是一份单文件 HTML 报告，并同时给出 Markdown。"

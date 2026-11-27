@@ -15,6 +15,23 @@
     "entry_horizon": null,
     "provisional_assumptions": []
   },
+  "job_search": {
+    "target_count": 10,
+    "verified_open_count": 0,
+    "boards_searched": [],
+    "shortfall_reason": null,
+    "ranking_rubric": [
+      "first_hand_open_this_run",
+      "fit_to_proven_work",
+      "eligibility",
+      "role_quality",
+      "source_quality",
+      "freshness_and_deadline",
+      "retention_only_if_stated"
+    ]
+  },
   "sources": [],
+  "recommended_jobs": [],
+  "excluded_jobs": [],
   "recommendations": []
 }

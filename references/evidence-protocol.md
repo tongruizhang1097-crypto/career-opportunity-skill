@@ -8,6 +8,14 @@ Read sources before relying on them. A search snippet is a lead; if inaccessible
 
 Identify source families: five articles repeating one recruiting report are one underlying source. Record publication date and the period described. Treat testimonials, promotional forecasts, and employer complaints as weaker than independently corroborated behavior.
 
+## Apply list versus a requirements sample
+
+The apply list and a requirements sample are different products. The apply list contains only postings opened in this run, shown as open or accepting applications, eligible for this person, and cited at a first-hand URL: the employer site, the company ATS, or a named primary board (Boss Zhipin, LinkedIn, an official campus career site, or the equivalent board in that market). A reprint may locate the original. It is not the citation on a recommended job.
+
+A broader reading sample may include closed or adjacent ads when the question is "what do these roles ask for." Keep that sample out of `recommended_jobs`, and label it in the report as context rather than as something to apply to. Do not pad the apply list to 10. Rank survivors with the written rubric: first-hand open status is a gate; then proven-work fit, eligibility, role quality, source quality, freshness and deadline, and retention only when the posting states it. Do not publish a weighted score.
+
+Show the source name, URL, posting date, deadline, and this-run check time next to the job in the HTML and Markdown. The ledger row is additional.
+
 ## Posting collection and comparison
 
 - Record employer, title, requisition ID where available, location, level, tasks, necessary/optional qualifications, application URL, first observed date, collection date, and access/status.

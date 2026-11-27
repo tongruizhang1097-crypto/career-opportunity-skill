@@ -11,6 +11,14 @@
   "target_career_level": null,
   "compensation_and_conditions": [],
   "hard_constraints": [],
+  "constraints": {
+    "graduation_timing": null,
+    "current_work_or_internship": null,
+    "locations_can_work": [],
+    "will_do": [],
+    "will_not_do": [],
+    "work_authorization": null
+  },
   "preference_tradeoffs": [],
   "learning_budget": {
     "hours_per_week": null,
