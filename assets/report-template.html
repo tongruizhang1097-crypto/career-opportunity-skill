@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[报告标题] · 求职指导</title>
+<!--
+  Primary deliverable. One file, no server, no external assets.
+  Replace every bracketed placeholder from THIS run. Translate visible
+  labels into the user's language. Delete the banner before delivery.
+  Do not leave this example employer in a finished report.
+  PDF: open this file in a browser, Print, Save as PDF. Do not call a paid API.
+  Ranking rubric, in order, with no numeric score:
+  1. first_hand_open_this_run (gate)
+  2. fit_to_proven_work
+  3. eligibility
+  4. role_quality
+  5. source_quality (official, ats, primary_board, campus — never a reprint)
+  6. freshness_and_deadline
+  7. retention_only_if_stated
+-->
+<style>
+  :root {
+    --paper: #f3efe6;
+    --card: #fffdf8;
+    --ink: #1c1915;
+    --muted: #5e584e;
+    --line: #e3d9c6;
+    --accent: #143f4f;
+    --accent-soft: #e5f0f3;
+    --good: #1d6b45;
+    --good-soft: #e5f4ec;
+    --warn: #8a4b12;
+    --warn-soft: #f8efe4;
+    --shadow: 0 1px 0 rgba(28, 25, 21, 0.04);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Avenir Next", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  a { color: var(--accent); }
+  .sheet { max-width: 880px; margin: 0 auto; padding: 32px 20px 64px; }
+  header.mast {
+    background: var(--accent);
+    color: #f7f4ee;
+    padding: 36px 20px 28px;
+  }
+  header.mast .sheet { padding-top: 0; padding-bottom: 0; }
+  .kicker {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Noto Serif SC", serif;
+    font-size: 2.1rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .dek { margin: 0; max-width: 40rem; color: #e7eef0; }
+  .status {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px 10px;
+    border: 1px solid rgba(247, 244, 238, 0.45);
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  .template-banner {
+    background: #f8efe4;
+    color: var(--warn);
+    border-bottom: 1px solid #efd7bc;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  section { margin-top: 28px; }
+  h2 {
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Noto Serif SC", serif;
+    font-size: 1.45rem;
+    margin: 0 0 12px;
+  }
+  h3 { font-size: 1.05rem; margin: 0 0 6px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  .grid { display: grid; gap: 12px; }
+  .grid.two { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 700px) { .grid.two { grid-template-columns: 1fr; } }
+  .label { color: var(--muted); font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 4px; }
+  ul, ol { margin: 8px 0 0; padding-left: 1.2rem; }
+  li + li { margin-top: 4px; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+  th { font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  .claim { margin: 0 0 12px; }
+  .cite {
+    display: block;
+    margin-top: 8px;
+    padding: 10px 12px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .cite-label { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .cite a { font-weight: 650; }
+  .cite .meta { display: block; color: var(--muted); margin-top: 2px; }
+  .job {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 8px 14px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 0 0 14px;
+    break-inside: avoid;
+  }
+  .rank {
+    grid-row: span 2;
+    width: 64px; height: 64px;
+    border-radius: 14px;
+    background: var(--accent);
+    color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-family: "Iowan Old Style", Palatino, "Songti SC", serif;
+    font-size: 1.7rem;
+  }
+  .reason { margin: 6px 0 0; }
+  .tag {
+    display: inline-block;
+    margin-right: 6px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--good-soft);
+    color: var(--good);
+    font-size: 12px;
+    font-weight: 650;
+  }
+  .tag.warn { background: var(--warn-soft); color: var(--warn); }
+  .rubric { margin: 0; padding-left: 1.2rem; }
+  .rubric li { margin-top: 6px; }
+  footer { margin-top: 36px; color: var(--muted); font-size: 14px; }
+  @media print {
+    .noprint, .template-banner { display: none !important; }
+    body { background: white; font-size: 12pt; }
+    header.mast { background: white; color: black; padding: 0; }
+    .dek, .status { color: black; }
+    a { color: black; text-decoration: none; }
+    a[href^="http"]::after {
+      content: " (" attr(href) ")";
+      font-size: 9pt;
+      word-break: break-all;
+    }
+    .card, .job, .cite, tr { break-inside: avoid; }
+    .sheet { max-width: none; }
+  }
+</style>
+</head>
+<body>
+<p class="template-banner noprint">模板：交付前删掉此条，并换掉全部方括号占位。示例雇主不是用户。</p>
+<header class="mast">
+  <div class="sheet">
+    <p class="kicker">Career counseling snapshot · 求职指导</p>
+    <h1>[给这个人的一句话标题，写动作，不写行业综述]</h1>
+    <p class="dek">[适用对象：学历或阶段、毕业时间、能去的城市、当前实习。不要写联系方式。]</p>
+    <p class="status">[live / partial / offline] · 生成于 [本地时间与时区]</p>
+  </div>
+</header>
+<main class="sheet">
+  <section id="decision">
+    <h2>现在先做什么</h2>
+    <div class="card">
+      <p class="claim">[两到四句：这周投什么、先别投什么、为什么是这个人而不是这个行业。实质判断后面紧跟来源，不要收到文末。]
+        <span class="cite">
+          <span class="cite-label">来源 · 本轮已打开</span>
+          <a href="https://example.invalid/jobs/example">[来源名称，例如雇主招聘页 / Boss Zhipin / LinkedIn / 学校就业网]</a>
+          <span class="meta">发布 [日期或“页面未写”] · 截止 [日期或“页面未写”] · 本次核验 [ISO 时间]</span>
+        </span>
+      </p>
+      <div class="grid two">
+        <div>
+          <p class="label">这周投</p>
+          <ul>
+            <li>[岗位 1：雇主与标题，指向下方名次]</li>
+            <li>[若名单不足 10 个，这里写明为什么更短]</li>
+          </ul>
+        </div>
+        <div>
+          <p class="label">先别投</p>
+          <ul>
+            <li>[已关闭、届别不符、城市不符、打杂、原文打不开。各给一条原因]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="constraints">
+    <h2>这份简历和这些约束</h2>
+    <div class="grid two">
+      <article class="card">
+        <p class="label">已经证明的工作</p>
+        <ul>
+          <li>[任务] — [简历位置] — [证据边界：独立完成 / 协助 / 仅自述]</li>
+        </ul>
+      </article>
+      <article class="card">
+        <p class="label">条件</p>
+        <ul>
+          <li>城市：[能实际过去的地方；未知就写未知]</li>
+          <li>毕业或入场：[时间]</li>
+          <li>当前实习或工作：[在职与可释放的时间]</li>
+          <li>愿意 / 不愿意：[用户原话]</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="apply-list">
+    <h2>可投岗位</h2>
+    <p>[本轮一手核验仍在招、且这个人够格的岗位，按排序规则从高到低。不足 10 个就写实际数量和原因。不要凑数。]</p>
+    <article class="job" id="job-1">
+      <div class="rank">1</div>
+      <div>
+        <h3>[雇主] · [岗位标题]</h3>
+        <p><span class="tag">本轮已打开 · 在招</span> <span class="tag">[official / ats / primary_board / campus]</span></p>
+        <p class="reason">[一两句，只适用于这个人：哪段已证明的工作对得上、哪条约束满足了、哪一点还没被证明。]</p>
+      </div>
+      <div class="cite">
+        <span class="cite-label">来源</span>
+        <a href="https://example.invalid/jobs/example">[来源名称]</a>
+        <span class="meta">发布 [日期或页面未写] · 截止 [日期或页面未写] · 本次核验 [ISO 时间] · 资格 [eligible / conditional：条件是什么]</span>
+      </div>
+    </article>
+    <!-- Copy .job for ranks 2..n. Stop when verified openings run out. -->
+  </section>
+
+  <section id="strategy">
+    <h2>求职策略</h2>
+    <div class="card">
+      <h3>作品</h3>
+      <p>[一份作品，对应仍在招岗位真正要的缺口。写交付物、前提和大致工时。]</p>
+      <h3>两条路怎么选</h3>
+      <p>[只有简历和在招岗位同时支持两条路时才写。写什么证据会改顺序。]</p>
+      <h3>什么事实会改写建议</h3>
+      <ul>
+        <li>[至多三条，绑在这个人的约束上]</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="tracks">
+    <h2>方向比较</h2>
+    <p>[短表，服务上面的选择。不是报告正文。每行的市场判断旁边也要有来源。]</p>
+    <table>
+      <thead>
+        <tr><th>方向</th><th>和已证明工作的关系</th><th>门槛</th><th>决定</th><th>来源</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>[方向]</td>
+          <td>[优势与缺口]</td>
+          <td>[通过 / 不通过 / 未知]</td>
+          <td>[优先验证 / 小规模探索 / 观察 / 暂缓]</td>
+          <td><a href="https://example.invalid/report">[来源名称]</a><br>[发布日期 · 数据覆盖期 · 本次核验]</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="rubric">
+    <h2>排序规则</h2>
+    <p>先排除本轮没有一手打开、或页面没有显示在招的岗位。剩下的按这个顺序比较，不使用加权分：</p>
+    <ol class="rubric">
+      <li>本轮已一手核验为仍在招，或明确接受申请。这是入围条件。</li>
+      <li>和简历里已经做成的工作是否契合，而不是关键词相同。</li>
+      <li>资格是否够得着：毕业年份、学历、这个人实际能去的城市或身份。</li>
+      <li>岗位成色：实质工作还是事务性填充，以及是否通向这个人的目标。</li>
+      <li>来源质量：雇主官网、招聘系统、一手招聘板，高于转载。</li>
+      <li>新鲜程度和截止日期。</li>
+      <li>留用或转化，只有招聘原文写了才计入。</li>
+    </ol>
+  </section>
+
+  <section id="excluded">
+    <h2>看过但没有放进名单</h2>
+    <table>
+      <thead>
+        <tr><th>岗位</th><th>原因</th><th>来源与本次核验</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>[雇主与标题]</td>
+          <td>[已关闭 / 未打开 / 届别不符 / 只有转载 / 城市不符]</td>
+          <td><a href="https://example.invalid/closed">[来源名称]</a><br>本次核验 [时间]</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="coverage">
+    <h2>证据范围</h2>
+    <div class="card">
+      <p>检索了 [boards_searched]。一手打开并仍在招的相关岗位 [n] 个，目标 10 个。[不足 10 个的原因，与 manifest 的 shortfall_reason 一致。]</p>
+      <p>岗位日期是页面上的发布日，统计数字的覆盖期单独写，本次核验时间是打开页面的时间。三者不要混成“最新市场”。</p>
+      <p>审计只核对清单里声明的链接和时间，不代替你自己打开页面。[未解决的警告写在这里。]</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>在浏览器中打开本文件，使用打印并另存为 PDF。不需要本地服务器，也不需要付费转换。</p>
+  </footer>
+</main>
+</body>
+</html>
